@@ -25,9 +25,7 @@
             <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
               <?php if($_SESSION['usuario']->getAcesso_qualidade()) require_once "$path/intra/view/menu/menu_qualidade.html";?>   
               <?php if($_SESSION['usuario']->getAcesso_ambiental()) require_once "$path/intra/view/menu/menu_ambiental.html";?>   
-                
-              
-
+              <?php if($_SESSION['usuario']->getAcesso_telefone()) require_once "$path/intra/view/menu/menu_telefone.html";?>   
             </div>
             <!-- /sidebar menu -->
 

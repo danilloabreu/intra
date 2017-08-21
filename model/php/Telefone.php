@@ -1,76 +1,64 @@
 <?php
 
-class Usuario{
+class Telefone{
     
     //variáveis do banco de dados
-    private static $tableDb="usuario";    
+    private static $tableDb="telefone";    
     private static $tableColumns = array(
     "id"=>null,
-    "usuario"=>null,
-    "senha"=>null,
-    "email"=>null,
-    "acesso_qualidade"=>null,
-    "acesso_ambiental"=>null,
-    "acesso_adm"=>null,
-    "acesso_telefone"=>null,
+    "tipo"=>null,
+    "descricao"=>null,
+    "numero"=>null,
   );
     
     public $id;
-    public $usuario;
-    public $senha;
-    public $email;
-    public $acesso_qualidade;
-    public $acesso_ambiental;
-    public $acesso_adm;
-    public $acesso_telefone;
+    public $tipo;
+    public $descricao;
+    public $numero;
    
-   
-    public function __construct($id,$usuario,$senha,$email,$acesso_qualidade,$acesso_ambiental,$acesso_adm,$acesso_telefone) {
-    $this->id= $id;
-    $this->usuario=$usuario;
-    $this->senha= $senha;
-    $this->email= $email;
-    $this->acesso_qualidade= $acesso_qualidade;
-    $this->acesso_ambiental= $acesso_ambiental;
-    $this->acesso_adm= $acesso_adm;
-    $this->acesso_telefone= $acesso_telefone;
-    }//fim do construtor 
+
+    function __construct($id, $tipo, $descricao, $numero) {
+        $this->id = $id;
+        $this->tipo = $tipo;
+        $this->descricao = $descricao;
+        $this->numero = $numero;
+    }
+
+    
     
     function getId() {
         return $this->id;
     }
 
-    function getUsuario() {
-        return $this->usuario;
+    function getTipo() {
+        return $this->tipo;
     }
 
-    function getSenha() {
-        return $this->senha;
+    function getDescricao() {
+        return $this->descricao;
     }
 
-    function getEmail() {
-        return $this->email;
+    function getNumero() {
+        return $this->numero;
     }
 
-    function getAcesso_qualidade() {
-        return $this->acesso_qualidade;
+    function setId($id) {
+        $this->id = $id;
     }
 
-    function getAcesso_ambiental() {
-        return $this->acesso_ambiental;
+    function setTipo($tipo) {
+        $this->tipo = $tipo;
     }
 
-    function getAcesso_adm() {
-        return $this->acesso_adm;
+    function setDescricao($descricao) {
+        $this->descricao = $descricao;
     }
 
-    function getAcesso_telefone() {
-        return $this->acesso_telefone;
+    function setNumero($numero) {
+        $this->numero = $numero;
     }
 
-    
-
-public static function read ($conexao,$condicao){
+    public static function read ($conexao,$condicao="true"){
     $sql="SELECT ";
     
     foreach(self::$tableColumns as $key => $keyValue){
@@ -166,17 +154,5 @@ $param=array();
     return $listaResultado;
 }
 
-public static function checarLogin($usuario,$senha,$conexao){
-     $listaUsuario = self::read($conexao,"usuario='$usuario' AND senha='$senha'");
-     if(sizeof($listaUsuario)==1){
-         return $listaUsuario[0];
-     }else{
-         return false;
-     }
-      
-     
- }
-  
-
-}//fim da classe Usuario
+}//fim da classe Telefone
 
