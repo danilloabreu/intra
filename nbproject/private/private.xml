@@ -3,8 +3,24 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/xampp/htdocs/intra/view/php/page/page_table_celulares.php</file>
+            <file>file:/C:/xampp/htdocs/intra/view/php/table/table_celulares.php</file>
+            <file>file:/C:/xampp/htdocs/intra/view/php/page/page_table_ramais.php</file>
+            <file>file:/C:/xampp/htdocs/intra/view/php/page/page_table_lista_mestra_documento.php</file>
+            <file>file:/C:/xampp/htdocs/intra/model/php/Telefone.php</file>
+            <file>file:/C:/xampp/htdocs/intra/model/php/Lote.php</file>
+            <file>file:/C:/xampp/htdocs/intra/view/php/menu_superior.php</file>
+            <file>file:/C:/xampp/htdocs/intra/model/php/Mensagem.php</file>
+            <file>file:/C:/xampp/htdocs/intra/model/php/Proposta.php</file>
+            <file>file:/C:/xampp/htdocs/intra/model/php/ListaMestraDocumento.php</file>
+            <file>file:/C:/xampp/htdocs/intra/model/php/Usuario.php</file>
+            <file>file:/C:/xampp/htdocs/intra/controller/php/conexao1.php</file>
+            <file>file:/C:/xampp/htdocs/intra/model/php/Usuario2.php</file>
             <file>file:/C:/xampp/htdocs/intra/controller/php/conexao.php</file>
-            <file>file:/C:/xampp/htdocs/intra/controller/php/conexao2.php</file>
+            <file>file:/C:/xampp/htdocs/intra/view/menu/menu_telefone.html</file>
+            <file>file:/C:/xampp/htdocs/intra/view/php/table/table_lista_mestra_documento.php</file>
+            <file>file:/C:/xampp/htdocs/intra/view/php/table/table_ramais.php</file>
+            <file>file:/C:/xampp/htdocs/intra/view/php/menu_lateral.php</file>
         </group>
     </open-files>
 </project-private>
